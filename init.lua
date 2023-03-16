@@ -1,9 +1,3 @@
-minetest.register_craftitem("potions_and_magic:water_glass_bottle", {
-    description = "bottle of water",
-    inventory_image = "pm_water_glass_bottle.png",
-    sound = {eat = "glowstone_place"},
-    on_use = minetest.item_eat(0),
-})
 
 --
 -- Blocks :
@@ -65,8 +59,8 @@ minetest.register_node("potions_and_magic:gillykelp", {
     selection_box = {
 		type = "fixed",
 		fixed = {
-				{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
-				{-4/16, 0.5, -4/16, 4/16, 1.5, 4/16},
+            {-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+            {-4/16, 0.5, -4/16, 4/16, 1.5, 4/16},
 		},
 	},
 })
@@ -110,6 +104,12 @@ minetest.register_node("potions_and_magic:slime_block", {
 --
 -- Items :
 --
+minetest.register_craftitem("potions_and_magic:water_glass_bottle", {
+    description = "bottle of water",
+    inventory_image = "pm_water_glass_bottle.png",
+    on_use = minetest.item_eat(0),
+})
+
 local golden_apple_count = {} -- Permet l'accumulation de l'effet
 minetest.register_craftitem("potions_and_magic:golden_apple",{
     description = "Golden Apple",

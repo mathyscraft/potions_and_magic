@@ -186,37 +186,3 @@ minetest.register_craftitem("potions_and_magic:water_breathing_potion", {
         end)
     end
 })
-
-function change_visual(player)
-    local timer = 60 + minetest.get_gametime()
-    local default_properties = player:get_properties()
-
-    minetest.register_globalstep(function(dtime)
-        if minetest.get_gametime() < timer then
-            player:set_properties({
-                visual = "cube", 
-                textures = {"default_stone.png", "default_stone.png", "default_stone.png",
-                "default_stone.png", "default_stone.png", "default_stone.png"},
-                visual_size = {x = 1, y = 1, z = 1},
-                collisionbox = {-0.49, -0.5, -0.49, 0.49, 0.49, 0.49}, 
-                eye_height = 0.35
-            })
-        else
-            player:set_properties({
-                visual = default_properties.visual,
-                textures = default_properties.textures,
-                collisionbox = default_properties.collisionbox,
-                eye_height = default_properties.eye_height
-            })
-        end
-    end)
-end
-
-minetest.register_craftitem("potions_and_magic:camouflage_potion", {
-    description = "Potion of camouflage",
-    inventory_image = "pm_camouflage_potion.png",
-    on_use = function(itemstack, user, pointed_thing)
-        change_visual(user)
-        create_potion_hud("camouflage", user)
-    end
-})
