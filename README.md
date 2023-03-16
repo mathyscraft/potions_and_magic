@@ -1,5 +1,6 @@
+This version is a **beta** if you find **issues** please report them [on this page](https://github.com/mathyscraft/potions_and_magic/issues)
 # Potions and Magic
-Potions & add Magic add sevral potions and items or blocks to craft them.
+Potions & Magic add sevral potions and items or blocks to craft them.
 Effects have a player hud when they are applied.
 ![Screenshot_hud](./doc/screenshot_1.png)
 
@@ -11,7 +12,7 @@ Effects have a player hud when they are applied.
 - ***water breathing***: give the ability to breathe underwater
 - ***weightlessness***: reduce by 4 the gravity
 
-NB: All effect have a duration of **1min**
+NB: All effect last **1min**
 
 ### Crafts :
 ![craft_guide](./doc/craft_guide.png)
@@ -25,7 +26,7 @@ And new blocks :
 - sugar cane
 - slime block **(bouncy propriety)**
 - gillykelp
-- glow mushroom (enlighten you in the caves)
+- glow mushroom (naturally ligh the caves a bit)
 
 
 ![screenchot_block](./doc/screenshot_2.png)
@@ -33,5 +34,8 @@ And new blocks :
 ---
 ---
 ### Work in progress :
-A camouflage effect
-![screenchot_camouflage](./doc/screenshot_4.png)
+- a camouflage effect
+![screenchot](./doc/work_in_progress_1.png)
+- make the nightvision effect effective in caves
+![screenchot](./doc/work_in_progress_2.png)
+- add particles
